@@ -1,4 +1,4 @@
-package com.duckblade.runelite.comborunes;
+package com.duckblade.osrs.comborunes;
 
 import net.runelite.client.RuneLite;
 import net.runelite.client.externalplugins.ExternalPluginManager;
