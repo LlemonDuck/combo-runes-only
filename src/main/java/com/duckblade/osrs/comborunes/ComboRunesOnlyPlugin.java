@@ -79,7 +79,9 @@ public class ComboRunesOnlyPlugin extends Plugin
 
 		WorldPoint wp = p.getWorldLocation();
 		boolean wasInAltar = this.inAltar;
-		this.inAltar = Arrays.stream(Altar.values()).anyMatch(a -> a.inAltar(wp));
+		this.inAltar = Arrays.stream(Altar.values())
+			.filter(Altar::isConfigEnabled)
+			.anyMatch(a -> a.inAltar(wp));
 
 		if (inAltar && !wasInAltar) // rising edge
 		{
