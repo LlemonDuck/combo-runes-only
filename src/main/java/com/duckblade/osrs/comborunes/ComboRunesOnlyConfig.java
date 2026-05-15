@@ -56,10 +56,21 @@ public interface ComboRunesOnlyConfig extends Config
 	}
 
 	@ConfigItem(
+			keyName = "removeCosmic",
+			name = "Remove for Cosmic Altar",
+			description = "Remove left-click craft-rune from the Cosmic Altar.",
+			position = 5
+	)
+	default boolean removeCosmic()
+	{
+		return true;
+	}
+
+	@ConfigItem(
 		keyName = "removeMode",
 		name = "Mode",
 		description = "Whether to deprioritize or completely remove craft-rune at altars.",
-		position = 5
+		position = 6
 	)
 	default RemoveMode removeMode()
 	{
