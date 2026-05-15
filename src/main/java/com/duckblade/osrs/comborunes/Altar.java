@@ -12,7 +12,8 @@ public enum Altar
 	AIR(11339, ComboRunesOnlyConfig::removeAir),
 	WATER(10827, ComboRunesOnlyConfig::removeWater),
 	EARTH(10571, ComboRunesOnlyConfig::removeEarth),
-	FIRE(10315, ComboRunesOnlyConfig::removeFire);
+	FIRE(10315, ComboRunesOnlyConfig::removeFire),
+	COSMIC(8523, ComboRunesOnlyConfig::removeCosmic);
 
 	private final int region;
 	private final Function<ComboRunesOnlyConfig, Boolean> configGetter;
